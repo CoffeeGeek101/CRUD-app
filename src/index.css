@@ -1,0 +1,97 @@
+
+/* TASK_LIST STYLE----------------------------- */
+
+.tasklist-container{
+  flex: 3;
+  padding: 60px 40px;
+}
+
+.tasklist{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.search-wrapper{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
+
+.task{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.104);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.task-title-holder{
+  display: flex;
+  justify-content: space-between;
+}
+
+.badge-holder{
+  display: flex;
+  margin-right: 20px;
+  gap: 10px;
+}
+
+.task-des{
+  color: grey;
+}
+.due-date-holder{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.tasks-wrapper{
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.104);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+
+/* CREATE_TASK STYLE------------------------ */
+
+.create-task{
+  flex: 3;
+  background-image: url(https://images.unsplash.com/photo-1522518961115-07c922089dd4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80);
+  background-position:left;
+  background-size: cover;
+  box-shadow: inset 20px -1px 23px -18px rgba(0, 0, 0, 0.156);
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 30px;
+  /* color: #fff; */
+  align-items: flex-start;
+  padding: 60px 40px;
+  /* background-color: aquamarine; */
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter:blur(20px);
+  border-radius: 10px;
+  box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.185);
+}
+
+
+.task-form{
+  display: flex;
+  gap: 50px;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
