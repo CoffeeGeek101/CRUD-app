@@ -8,3 +8,8 @@
   /* padding: 40px; */
 }
 
+@media only screen and (max-width : 835px){
+  .App{
+    flex-direction: column-reverse;
+  }
+}
