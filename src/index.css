@@ -132,6 +132,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* padding: 40px; */
 }
 
 /* UPDATE ----------------------------------*/
@@ -205,6 +206,10 @@
     width: 250px;
     right: -20px;
   }
+  .update-form{
+    left: 22%;
+    top: 12%;
+  }
 }
 
 @media only screen and (max-width : 526px){
@@ -218,6 +223,7 @@
   .badge-holder{
     margin-right: 0px;
     gap: 3px;
+    flex-direction: column;
   }
   .task-title-holder{
     gap: 5px;
@@ -234,5 +240,56 @@
   }
   .tasklist{
     padding: 10px;
+  }
+  .update-form{
+    left: 15%;
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 432px){
+  .update-form{
+    left: 10%;
+    top: 10%;
+  }
+}
+@media only screen and (max-width : 389px){
+  .update-form{
+    left: 5%;
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 340px){
+  .update-form{
+    left: 0%;
+    top: 3%;
+  }
+  .tasklist{
+    padding: 0px;
+  }
+  .tasklist-container{
+    padding: 20px 10px;
+  }
+}
+
+@media only screen and (max-height : 678px){
+  .task-form{
+    padding: 40px;
+  }
+  .update-form{
+    left: 4%;
+    top: 0%;
+    max-height: 500px;
+  }
+}
+@media only screen and (max-height : 681px){
+  .task-form{
+    padding: 40px;
+  }
+  .update-form{
+    left: 12%;
+    top: 0%;
+    max-height: 500px;
   }
 }
