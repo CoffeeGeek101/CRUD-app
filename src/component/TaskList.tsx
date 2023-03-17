@@ -123,6 +123,9 @@ export const TaskList = () => {
                         '@media (max-width: 835px)':{
                             minWidth: '300px',
                         },    
+                        '@media (max-width: 340px)':{
+                            minWidth: '100px',
+                        },    
                         }}
                         size='small'
                         focused={false}
@@ -170,8 +173,9 @@ export const TaskList = () => {
                                                 sx={{ minWidth: '80px', maxHeight: '25px', fontSize: '12px' }}
                                                 onClick={() => dispatch(deleteTask({ _id: item._id }))}
                                             />
-
+                                            <Tooltip title={item.date}>
                                             <Chip label={`Due Date - ${item.date}`} color="info" sx={{ minWidth: '80px', maxHeight: '25px', fontSize: '12px' }} />
+                                            </Tooltip>
                                         </div>
                                     </div>
                                     {
@@ -239,7 +243,7 @@ export const TaskList = () => {
                                                 }}
                                                 onClick={() => dispatch(deleteTask({ _id: item._id }))}
                                             />
-
+                                            <Tooltip title={item.date}>
                                             <Chip 
                                             label={`Due Date - ${item.date}`} 
                                             color="info" 
@@ -250,6 +254,7 @@ export const TaskList = () => {
                                                     fontSize: '10px',
                                                 }
                                                  }} />
+                                            </Tooltip>
                                         </div>
                                     </div>
                                     {
