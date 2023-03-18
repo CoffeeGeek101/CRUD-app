@@ -288,8 +288,8 @@
     padding: 40px;
   }
   .update-form{
-    left: 12%;
-    top: 0%;
-    max-height: 500px;
+    left: 1%;
+    top: 1%;
+    gap: 20px;
   }
 }
